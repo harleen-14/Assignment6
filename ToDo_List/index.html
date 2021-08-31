@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/cac0ebd441.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Todo list</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+        <div class="div1 text-center">
+        <h1 >Todo List</h1>
+        <form id="addForm">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-7">
+  
+                    <input type="text" onkeyup=
+                        "toggleButton(this, 'submit')"
+                         id="item">
+                </div>
+  
+                <div class="col-lg-5 col-md-5 col-sm-5 mt-3">
+                  <input type="submit" class="btn btn-dark "
+                        id="submit" value="Submit" disabled>
+                </div>
+            </div>
+        </form>
+        <form id="addForm">
+            <ul class="list-group" id="items"></ul>
+        </form>
+        </div>
+    </div>
+        <script src="app.js"></script>
+    </body>
+    </html>
